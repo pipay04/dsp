@@ -37,7 +37,7 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+I decided to stick with built-in installation of my Mac Python 2.7, because from reading on the net about which version to use a lot of python users suggest 2.7 for more documentation and support available. Also, it was mentioned in our group chat that the class will use 2.7. To check Python version installed, open command line or terminal and type "python".
 
 ---
 
