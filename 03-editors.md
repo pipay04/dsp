@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+Emacs. This editor is new to me but as I learned to use it, it became evident that it is a very powerful editor with a lot of useful shortcuts and flexible number of buffers per window. You can scroll through text fairly quick by command and alt shortcuts. I can split my window into several buffers by using ctrl-x command.
 
 ---
