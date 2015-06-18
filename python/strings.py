@@ -99,8 +99,13 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    first_word = a[0:2]
+    second_word = b[0:2]
+    a_word = a[2:len(a)]
+    b_word = b[2:len(b)]
 
+    print "%s%s %s%s" % (second_word, a_word, first_word, b_word)
 
 def verbing(s):
     """
