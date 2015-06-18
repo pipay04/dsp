@@ -69,7 +69,21 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    def fix_start(s):
+    fix  = s[0]
+    word = ""
+
+    for index, char in enumerate(s):
+        if char == fix:
+            if index == 0:
+                word = "%s%s" % (word, char)
+            else:
+                word = "%s%s" % (word, "*")
+        else:
+            word = "%s%s" % (word, char)
+
+    print word
 
 
 def mix_up(a, b):
