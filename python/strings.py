@@ -44,7 +44,6 @@ def both_ends(s):
     """
     #raise NotImplementedError
     
-    def both_ends(s):
     if len(s) < 2:
         return ""
     else:
@@ -70,7 +69,6 @@ def fix_start(s):
     'donut'
     """
     #raise NotImplementedError
-    def fix_start(s):
     fix  = s[0]
     word = ""
 
