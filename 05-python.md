@@ -36,7 +36,7 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-Lambdas are in-line, anonymous functions used when a particular piece of code will not be reused. It is helpful so as not to make the code cluttered with numerous regular functions that are used only once.
+> Lambdas are in-line, anonymous functions used when a particular piece of code will not be reused. It is helpful so as not to make the code cluttered with numerous regular functions that are used only once.
 
 ---
 
