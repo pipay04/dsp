@@ -121,8 +121,14 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
-
+    #raise NotImplementedError
+    if len(s) >= 3:
+        if s[len(s)-3:len(s)] == "ing":
+            return "%sly" % (s)
+        else:
+            return "%sing" % (s)
+    else:
+        return s
 
 def not_bad(s):
     """
