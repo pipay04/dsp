@@ -174,4 +174,13 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    a_split = len(a) / 2 + len(a) % 2
+    b_split = len(b) / 2 + len(b) % 2
+
+    a_front = a[:a_split]
+    a_back = a[a_split:]
+    b_front = b[:b_split]
+    b_back = b[b_split:]
+
+    return "%s%s%s%s" % (a_front, b_front, a_back, b_back)
