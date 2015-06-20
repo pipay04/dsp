@@ -48,7 +48,9 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+> List comprehensions are simple and compact python constructs that generate lists based on an expression to be executed for each variable in a list/collection with or without a condition. Map() takes 2 arguments, a function and a list of values to apply the function to. Filter() also takes 2 arguments, a function that returns only either True or False and filters the set of values retaining only those that return True. List comprehensions can combine the capabilities of both map() and filter() into one expression. Example of map: generate squares of a range of numbers = map(lambda x: x**2 , range(10)). Example of filter: only retain in list squares are greater than 50 = filter(lambda x: x**2 > 50 , range(10)). We can create a simple list comprehension of original list values with squares greater than 50 by  [x for x in range(10) if x**2 > 50], which sort of combines both map and filter functions.
+Set comprehension: print all values divisible by 5 from 0 to 99 in sorted order = sorted({x for x in range(100) if x % 5 == 0})
+Dictionary comprehension: return all letters in word with corresponding uppercase letters = {x: x.upper() for x in "traditional"}
 
 ---
 
