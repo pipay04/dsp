@@ -39,7 +39,7 @@ In finding an element from a large set of data, sets are faster because they mak
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-> Lambdas are in-line, anonymous functions used when a particular piece of code will not be reused. It is helpful so as not to make the code cluttered with numerous regular functions that are used only once.
+> Lambdas are in-line, anonymous functions used when a particular piece of code will not be reused. It is helpful so as not to make the code cluttered with numerous regular functions that are used only once. Given a list of names = ["George Smith", "Anne Brown", "Mike James", "Katie Simpson"], we can sort by last name instead of the default first name sort using sorted(names, key=lambda name: name[name.index(" ")+1:]).
 
 ---
 
