@@ -62,8 +62,23 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    #raise NotImplementedError
+    last_elem = []
+    sorted_list = []
+    counter = 0
+    length = len(tuples)
+    
+    for tup in tuples:
+        last_elem.append(tup[len(tup)-1])
 
+    while counter < length:
+        min_index = last_elem.index(min(last_elem))
+        sorted_list.append(tuples[min_index])
+        del last_elem[min_index]
+        del tuples[min_index]
+        counter += 1
+
+    return sorted_list
 
 def remove_adjacent(nums):
     """
