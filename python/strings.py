@@ -183,4 +183,4 @@ def front_back(a, b):
     b_front = b[:b_split]
     b_back = b[b_split:]
 
-    return "%s%s%s%s" % (a_front, b_front, a_back, b_back)
+    return "%s%s%s%s" % (a_front, b_front, a_back, b_back) 
