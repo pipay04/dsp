@@ -131,4 +131,4 @@ def linear_merge(list1, list2):
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
     #raise NotImplementedError
-    return sorted(list1 + list2)
+    return sorted(list1 + list2) 
