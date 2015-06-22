@@ -34,4 +34,4 @@ The code returned the following differences in values:
 * Mean: -0.12 indicating first babies are generally lighter but not significantly
 * Var: 0.07 (not sure how to interpret)
 * Std: 0.03 deviation in lbs
-* Cohen's d: difference in means is -0.09 standard deviations
+* Cohen's d: difference in means is -0.09 standard deviations 
