@@ -44,4 +44,4 @@ Compare the actual distribution and the biased distribution for how many childre
     print "PMF Mean: %s" % (pmf_mean)  
     print "Biased PMF Mean: %s" % (biased_mean)
     
-  
+The mean of actual PMF is 1.02 children in a household while the mean of the biased PMF is 2.40 children in a household.
