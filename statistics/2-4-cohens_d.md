@@ -12,23 +12,24 @@ Investigate whether first babies are lighter or heavier than others using Cohen'
 4. Get *totalwgt_lb* for both groups.  
 5. Apply Cohen's *d* function to both groups.  
 
-**Solution(Code):**  
-import nsfg  
-import thinkstats2
+**Solution(Code):**
 
-preg = nsfg.ReadFemPreg()  
-live = preg[preg.outcome == 1]
+      import nsfg  
+      import thinkstats2
 
-firsts = live[live.birthord == 1]  
-others = live[live.birthord != 1]
+      preg = nsfg.ReadFemPreg()  
+      live = preg[preg.outcome == 1]
 
-firsts_group = firsts.totalwgt_lb  
-others_group = others.totalwgt_lb
+      firsts = live[live.birthord == 1]  
+      others = live[live.birthord != 1]
 
-print 'Mean: ', firsts_group.mean() - others_group.mean()  
-print 'Var', firsts_group.var() - others_group.var()  
-print 'Std', firsts_group.std() - others_group.std()  
-print 'Cohen\'s d', thinkstats2.CohenEffectSize(firsts_group, others_group)  
+      firsts_group = firsts.totalwgt_lb  
+      others_group = others.totalwgt_lb
+
+      print 'Mean: ', firsts_group.mean() - others_group.mean()  
+      print 'Var', firsts_group.var() - others_group.var()  
+      print 'Std', firsts_group.std() - others_group.std()  
+      print 'Cohen\'s d', thinkstats2.CohenEffectSize(firsts_group, others_group)  
 
 The code returned the following differences in values:
 * Mean: -0.12 indicating first babies are generally lighter but not significantly
