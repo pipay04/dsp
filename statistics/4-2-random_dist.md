@@ -32,3 +32,7 @@ Generate 1000 numbers using random.random(), plot the PMF and CDF and determine 
     thinkplot.Show(xlabel = 'random numbers', ylabel = 'CDF')
     
 The resulting shape of PMF is a rectangular distribution while that of CDF is a straight line, both indicating that this is a uniform distribution.
+
+![Imgur](http://i.imgur.com/Cp4eMls.png)
+
+![Imgur](http://i.imgur.com/c2s7a6e.png)
