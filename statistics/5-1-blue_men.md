@@ -4,6 +4,7 @@
 What percentage of the male population have heights between 178cm and 185cm?
 
 **Solution:**  
+    
     import scipy.stats
 
     mu = 178  
