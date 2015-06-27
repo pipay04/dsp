@@ -3,7 +3,7 @@
 **Problem:**  
 What percentage of the male population have heights between 178cm and 185cm?
 
-**Solution:**  
+**Solution:**
     
     import scipy.stats
 
