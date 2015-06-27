@@ -67,6 +67,10 @@ Compute the mean, median, skewness and Pearson's skewness of the sample. What fr
     thinkplot.Pdf(pdf, label='sample')
     thinkplot.Show(xlabel='household income', ylabel='PDF')
     
+![Imgur](http://i.imgur.com/jvrGqlH.png)
+
+![Imgur](http://i.imgur.com/Qg22suZ.png)
+    
     #log10 7.0
     sample_7 = InterpolateSample(df, 7.0) #sample values with upper bound at log10 to the 7
     conv_sample_7 = np.power(10, sample_7) #convert sample values to actual dollar values
@@ -85,3 +89,24 @@ Compute the mean, median, skewness and Pearson's skewness of the sample. What fr
     pdf = thinkstats2.EstimatedPdf(conv_sample_7)
     thinkplot.Pdf(pdf, label='sample')
     thinkplot.Show(xlabel='household income', ylabel='PDF')
+    
+![Imgur](http://i.imgur.com/rpql6I7.png)
+
+![Imgur](http://i.imgur.com/0xsswA3.png)
+    
+Answer:  
+For upper bound log10 6.0, 
+    mean: 74278.707531  
+    median: 51226.454479   
+    skewness: 4.949920   
+    Pearson's skewness: 0.736126   
+    Fraction of income below the mean: 0.660006  
+    
+For upper bound log10 7.0,
+    mean: 124267.397222 
+    median: 51226.454479 
+    skewness: 11.603690 
+    Pearson's skewness: 0.391565 
+    Fraction of income below the mean: 0.856563
+    
+The mean of the higher upper bound increased significantly as well as the skewness as represented by the graphs. However, the Pearson's skewness produced a much lower value for the higher upper bound.
