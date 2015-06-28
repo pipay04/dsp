@@ -14,7 +14,9 @@ Make a scatter plot of birth weight versus mother's age. Plot percentiles of bir
     live = live.dropna(subset=['totalwgt_lb', 'agepreg']) #drop all nan values
 
     thinkplot.Scatter(live['totalwgt_lb'], live['agepreg']) #scatter plot of birth weight and mother's age
-    #thinkplot.Show(xlabel='weight (lbs)', ylabel='mother\'s age')
+    thinkplot.Show(xlabel='weight (lbs)', ylabel='mother\'s age')
+
+![Imgur](http://i.imgur.com/Bw6VgOQ.png)
 
     bins = np.arange(-2, 20, 2) #NumPy array of bins from -2 to 20 (exclusive of 20) in increments of 2
     indices = np.digitize(live.totalwgt_lb, bins) #index of the bins
@@ -28,9 +30,19 @@ Make a scatter plot of birth weight versus mother's age. Plot percentiles of bir
 	    label = '%dth' % (percent,)
 	    thinkplot.Plot(weights, ages, label=label)
 
-    #thinkplot.Show(xlabel='weight (lbs)', ylabel='mother\'s age', label=label)
+    thinkplot.Show(xlabel='weight (lbs)', ylabel='mother\'s age', label=label)
+
+![Imgur](http://i.imgur.com/gNY5rF7.png)
 
     pearson = thinkstats2.Corr(live['totalwgt_lb'], live['agepreg'])
     spearman = thinkstats2.SpearmanCorr(live['totalwgt_lb'], live['agepreg'])
 
     print "Pearson\'s Correlation: %f vs. Spearman\'s Correlation: %f" % (pearson, spearman)
+    
+The scatter plot shows neither positive nor negative correlation.  
+The percentile plot also shows no linear pattern and can be considered non-linear.  
+Pearson's correlation: 0.0688  
+Spearman's correlation: 0.0946  
+Having Pearson's correlation much lower than Spearman's correlation means the distribution contains outliers.
+
+
