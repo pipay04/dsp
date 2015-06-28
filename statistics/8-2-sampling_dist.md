@@ -2,7 +2,7 @@
 
 **Problem:**  
 Simulate experiment 1000 times with sample size n = 10 from an exponential distribution with lambda = 2. Plot the sampling distribution of the estimate L. Compute standard error of the estimate and the 90% confidence interval.  
-Repeat the experiment with different values of n and make a plot of stasndard error versus n.
+Repeat the experiment with different values of n and make a plot of standard error versus n.
 
 **Solution:**
 
