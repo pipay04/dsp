@@ -27,7 +27,14 @@ Communicate the problem, how you solved it, and the solution, within each of the
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+> Based on Bayes' Theorem where 2 factors, prior data and newly acquired data can predict an outcome and formula
+  P(A|B) = [P(B|A) x P(A)] / P(B) where
+  - P(A) is probability of twins being identical (prior data indicates probability is 1/3)
+  - P(B|A) is conditional probability of B given A (given identical twins, probability of twins being 2 boys is 1/2) 
+  - P(B) is probability of having twin boys whether identical or fraternal (1/3 (if identical) x 1/2 (probability 2 boys) and 2/3 (if fraternal) x 1/4 (probability 2 boys) = 1/6 + 1/6 or 1/3)
+  - P(A|B) is conditional probabilit of A given B. Plugging in values to the formula:
+    - (1/2 x 1/3) / 1/3 = 1/2  
+  The probability that Elvis was an identical twin is 1/2.
 
 ---
 
