@@ -23,7 +23,7 @@ Compute the mean, median, skewness and Pearson's skewness of the sample. What fr
     
         # get the lower bounds by shifting the upper bound and filling in
         # the first element
-        df['log_lower'] = df.log_upper.shift(1)
+        df['log_lower'] = df.log_upper.shift(1) 
         df.log_lower[0] = 3.0
     
         # plug in a value for the unknown upper bound of the highest range
